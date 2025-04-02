@@ -8,89 +8,25 @@
 
 
 .bg-alpha{
-    background: #b0acac;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 
 
 
 /* Section Caousel */
-.carousel-item {
-    position: relative;
-    height: 500px; /* ความสูงเริ่มต้นสำหรับ Desktop */
-}
-
 .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 500px; /* ปรับความสูงของภาพ */
+    object-fit: cover; /* ทำให้ภาพเต็มพื้นที่ */
 }
-
 .carousel-caption {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 10px;
 }
 
-/* 📱 ปรับสำหรับหน้าจอขนาดเล็ก (มือถือ) */
-@media (max-width: 768px) {
-    .carousel-item {
-        height: 300px;
-    }
-
-    .carousel-caption {
-        width: 90%;
-        font-size: 14px;
-        padding: 5px;
-    }
-
-    .carousel-caption h1 {
-        font-size: 18px;
-    }
-
-    .carousel-caption p {
-        font-size: 12px;
-    }
-}
-
-/* 💻 ปรับสำหรับหน้าจอใหญ่ (Tablet - Desktop) */
-@media (min-width: 1200px) {
-    .carousel-item {
-        height: 600px;
-    }
-
-    .carousel-caption {
-        width: 70%;
-        font-size: 18px;
-    }
-}
-
-.border-short-bottom{
-    position: relative;
-    padding: 20px 0px;
-    margin-bottom:25px ;
-}
-
-.border-short-bottom:after {
-    position: absolute;
-    content: "";
-    width: 500px;
-    height: 2px;
-    bottom: 0;
-    background-color: black;
-    left: 50%; /* ทำให้ตำแหน่งซ้ายอยู่ที่ 50% ของหน้าจอ */
-    transform: translateX(-50%); /* เลื่อนกลับไปที่กลางจากตำแหน่ง 50% */
-}
 
 
 /* Section Blog */
@@ -114,6 +50,20 @@
 .warpper-card-img:hover img {
     transform: scale(1.1); /* ขยายภาพเมื่อ hover */
 }
+
+
+.text-center {
+    text-align: center; /* จัดให้อยู่กึ่งกลาง */
+}
+
+.border-short-bottom {
+    display: inline-block;
+    border-bottom: 3px solid black; /* เส้นขีดใต้ */
+    padding-bottom: 5px; /* เว้นระยะห่างระหว่างข้อความกับเส้น */
+}
+
+
+
 
 /* Section Footer */
 .semi-footer{
