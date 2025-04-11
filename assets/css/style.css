@@ -59,6 +59,13 @@
 
 }
 
+/* การ์ดที่อยู่ภายใต้ owl ถึงจะทำงาน ถ้าเขียน  css แบบนี้ */
+.owl-carousel .card-body{
+    height: 150px;
+    overflow: hidden;
+
+}
+
 @media (max-width: 991px){
     .blog-content{
         padding: 40px 50px;
