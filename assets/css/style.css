@@ -59,12 +59,64 @@
 
 }
 
+/* แก้ปัญหา card ไม่เท่ากัน */
+.row .card {
+    height: 500;
+    
+}
+
+@media screen {
+    
+}
+
+
+/* การ์ดให้เท่ากัน */
+/* .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-text {
+    flex-grow: 1;
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card-text {
+    flex-grow: 1;
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-body a.btn {
+    margin-top: auto;
+}
+
+
 /* การ์ดที่อยู่ภายใต้ owl ถึงจะทำงาน ถ้าเขียน  css แบบนี้ */
-.owl-carousel .card-body{
+/* .owl-carousel .card-body{
     height: 150px;
     overflow: hidden;
 
-}
+} */
 
 @media (max-width: 991px){
     .blog-content{
@@ -119,7 +171,7 @@
 
 
 #navbar{
-    padding: 25px;
+    padding: 5px;
     transition: 0.5s;
     
 }
@@ -272,3 +324,26 @@ li.inverted>.timeline-card {
     white-space: nowrap;
     overflow: hidden;
 }
+
+
+/* section on to top */
+.to-top{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+    background-color: #03f2ff;
+    color: white;
+    z-index: 9999;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.to-top:hover{
+    color: #000000;
+    background-color: #1065e4;
+}
+
